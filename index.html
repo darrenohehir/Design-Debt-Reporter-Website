@@ -1,11 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Help keep your designs in check with Design Debt Reporter">
+  <title>Design Debt Reporter | Help keep your designs in check.</title>
+  <link rel="stylesheet" href="classless.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="./favicon.png">
 </head>
 <body>
-    Hello
+  <a href="#main" class="skip-link">Skip to main content</a>
+  <header class="topnav">
+    <div class="topnav-wrapper">
+      <a href="./index.html" class="ddr-nav-logo">
+          <img class="ddr-nav-logo-full" src="./assets/ddr-logo.svg" height="48" width="148" alt="DDR Logo">
+          <img class="ddr-nav-logo-mark" src="./assets/ddr-logo-mark.svg" height="48" width="48" alt="DDR Logo">
+      </a>
+      <nav class="nav-items" id="mobile-menu" aria-label="Primary site navigation">
+        <a class="active" href="./index.html">Home</a>
+        <a href="./learning-topics.html">How it works</a>
+            
+        <div class="nav-item-dropdown">
+                
+          <button 
+              class="dropdown-toggle"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-controls="solutions-menu"
+            >Solutions
+              <svg class="icon-chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </button>
+          <ul class="dropdown-menu" role="menu" id="solutions-menu">
+            <li><a href="#">Design</a></li>
+            <li>
+              <a href="https://www.figma.com" target="_blank" rel="noopener">View on Figma
+                <svg class="icon-external-link" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                
+              </a>
+            </li>
+            <li>
+              <a href="https://www.figma.com" target="_blank" rel="noopener">View on Figma
+                <svg class="icon-external-link" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+              </a>
+            </li>
+            <li><a href="#">Another page</a></li>
+          </ul>
+        </div>
+            
+        <a href="./about.html">About</a>
+      </nav>
+      <div class="cta-buttons">
+        <a href="./topic-request.html" class="btn ddr-primary-light">How it works</a>
+        <a href="https://www.figma.com" target="_blank" class="btn ddr-primary">View on Figma</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="hamburger" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect y="3" width="24" height="2" rx="1" fill="inherit"/>
+              <rect y="11" width="24" height="2" rx="1" fill="inherit"/>
+              <rect y="19" width="24" height="2" rx="1" fill="inherit"/>
+          </svg>  
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="ddr-section ddr-section-hero position-relative">
+        <div class="ddr-bg-check"></div>
+      
+        
+      
+        <div class="ddr-container d-flex">
+            <div>
+                <h1 class="home-hero-h1">Help keep your designs in check.</h1>
+                <p class="f-500 text-wrap-balance">Scan your Figma frames for inconsistencies and minimise issues. Keep your team consistent and focused on great design.</p>
+                <div>
+                    <a href="https://www.figma.com" target="_blank" class="btn ddr-primary btn-lg">View on Figma</a>
+                    <a href="./contact.html" class="btn ddr-primary-light btn-lg">How it works</a>
+                </div>
+            </div>
+
+            <div style="min-width: 24rem; height: 22rem; margin-top: -2rem;">
+                <img src="./assets/ddr-dark-mode.svg" alt="" class="ddr-hero-img">
+            </div>
+        </div>
+    </section>
+
+    <section class="ddr-section">
+        <div class="ddr-container ddr-container-center">
+            <div class="ddr-badge mx-auto" style="width: max-content;">Made for Figma</div>
+            <h2>Keep your designs in check</h2>
+            <p class="text-wrap-balance max-ch mx-auto">Scan your Figma frames for inconsistencies and minimise issues. Keep your team consistent and focused on great design.</p>
+
+            <div class="ddr-bento-layout">
+                <div class="ddr-alert-light ddr-bento-card item-0">
+                    <h3 class="f-400">Quick Scans and Deep Dives</h3>
+                    <p class="f-200 max-ch text-wrap-balance">Instantly audit selected layers or full pages for design debt.</p>
+                    <div class="ddr-bento-card-img"></div>
+                </div>
+                <div class="ddr-alert-light ddr-bento-card item-1">
+                    <h3 class="f-400">Component-Aware Logic</h3>
+                    <p class="f-200 max-ch text-wrap-balance">Choose whether to scan instances, selected masters, or ignore them by default.</p>
+                    <div class="ddr-bento-card-img"></div>
+                </div>
+                <div class="ddr-alert-light ddr-bento-card item-2">
+                    <h3 class="f-400">Off-Scale Spacing Alerts</h3>
+                    <p class="f-200 max-ch text-wrap-balance">Flag padding, gaps, and spacing values that deviate from your system.</p>
+                    <div class="ddr-bento-card-img"></div>
+                </div>
+                <div class="ddr-alert-light ddr-bento-card item-3">
+                    <h3 class="f-400">Customisable Settings</h3>
+                    <p class="f-200 max-ch text-wrap-balance">Tailor scanning rules to match your design system and workflow..</p>
+                    <div class="ddr-bento-card-img"></div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="ddr-section">
+        <div class="ddr-container ddr-container-center">
+            <h2>Built for Design Systems</h2>
+            <p class="text-wrap-balance max-ch">Your design system deserves a plugin that speaks its language.
+                Define your spacing scale, adjust what gets scanned, and stay in control.</p>
+            <img src="./assets/ddr-ui-example.svg" alt="" class="pt-4">
+        </div>
+    </section>
+
+    <section class="ddr-section">
+        <div class="ddr-container ddr-container-center">
+            <h2>Designed for Solo Designers and Teams</h2>
+            <p class="text-wrap-balance">Whether you're cleaning up after a messy handoff, prepping for dev review, or onboarding new designers, Design Debt Reporter helps you catch problems early.</p>
+        </div>
+
+        <div style="display: grid; gap: 1rem; padding-top: 2rem;">
+            <div class="ddr-container ddr-grid">
+                <div class="ddr-grid-item">
+                    <h2 class="f-h4 fw-bold">For Solo Designers</h3>
+                    <p class="f-h6 text-wrap-balance">Ensure any minor issues in your Figma files are cleaned up before devs start implementation.</p>
+                    <ul>
+                        <li>10px?? Is that meant to be 8px or 12px?</li>
+                        <li>Resolve all these micro-inconsistencies so devs don’t have to worry about it.</li>
+                    </ul>
+                </div>
+                <div class="ddr-grid-item mx-auto" style="height: 100%; max-height: 18rem;">
+                    <img src="./assets/ddr-dark-mode.svg" alt=""style="margin-top: -2rem;">
+                </div>
+             
+            </div>
+      
+            <div class="ddr-container ddr-grid">
+                <div class="ddr-grid-item">
+                    <h2 class="f-h4 fw-bold">For Design Managers & Systems Leads</h3>
+                    <p class="f-h6 text-wrap-balance">Set the bar for quality at your company. Equip your team to catch issues early, align to your design system, and reduce time spent in QA.</p>
+                    <ul>
+                        <li>Ensure new designers use consistent tokens from day one.</li>
+                        <li>Prep files for smooth handoff with minimal manual checks.</li>
+                        <li>Reduce friction in QA reviews by flagging UI issues before they reach dev.</li>
+                    </ul>
+                </div>
+                <div class="ddr-grid-item mx-auto" style="height: 100%; max-height: 18rem;">
+                    <img src="./assets/ddr-dark-mode.svg" alt=""style="margin-top: -2rem;">
+                </div>
+              
+            </div>
+          </div>
+    </section>
+
+    <section class="ddr-section ddr-section-gradient">
+      <div class="ddr-container ddr-container-center">
+        <h2>Start cleaning up your Figma File’s Design Debt</h1>
+        <p class="f-h6">Download the plugin today</p>
+        <div>
+          <a href="https://www.figma.com" target="_blank" class="btn ddr-primary">View on Figma</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="ddr-section">
+    <div class="ddr-container">
+      <img src="./assets/ddr-logo.svg" height="auto" width="100%" alt="DDR Logo" style="max-width: 1024px">
+      
+      <div class="footer-links-wrapper">
+        <div class="d-block">
+          <p>About</p>
+          <a href="./about.html" class="d-block">About Us</a>
+          <a href="./contact.html" class="d-block">Contact</a>
+        </div>
+
+        <div class="d-block">
+          <p>Explore</p>
+          <a href="#" class="d-block">Design page</a>
+          <a href="https://www.figma.com" class="d-block">View on Figma</a>
+          <a href="https://www.figma.com" class="d-block">View on Figma</a>
+        </div>
+
+        <div class="d-block">
+          <p>Stuff</p>
+          <a href="#" target="_blank" class="d-block">Privacy Policy</a>
+          <a href="#" target="_blank" class="d-block">Terms of Use</a>
+        </div>
+
+        <div class="social-logo-wrapper">
+          <a href="#" target="_blank" class="d-block" aria-label="Click to view our LinkedIn page">
+            <img src="./assets/logo-linkedin.svg" width="32" height="32" alt="Social media page">
+          </a>
+        </div>
+      </div>
+
+      <p class="f-100 text-muted">© Design Debt Reporter 2025</p>
+      
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const dropdownToggle = document.querySelector('.dropdown-toggle');
+    const dropdownMenu = document.getElementById('solutions-menu');
+    const hamburgerIcon = navToggle.querySelector('.hamburger');
+  
+    // Toggle mobile nav
+    navToggle.addEventListener('click', () => {
+      const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', !isExpanded);
+      mobileMenu.classList.toggle('open');
+      hamburgerIcon.classList.toggle('open');
+      mobileMenu.setAttribute('aria-hidden', isExpanded); // inverse of expanded
+    });
+  
+    // Toggle dropdown menu
+    dropdownToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isExpanded = dropdownToggle.getAttribute('aria-expanded') === 'true';
+      dropdownToggle.setAttribute('aria-expanded', !isExpanded);
+      dropdownMenu.classList.toggle('show');
+    });
+  
+    // Close dropdown if clicked outside
+    document.addEventListener('click', (e) => {
+      if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+        dropdownToggle.setAttribute('aria-expanded', 'false');
+        dropdownMenu.classList.remove('show');
+      }
+    });
+  
+    // Close on Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        dropdownToggle.setAttribute('aria-expanded', 'false');
+        dropdownMenu.classList.remove('show');
+        navToggle.setAttribute('aria-expanded', 'false');
+        hamburgerIcon.classList.remove('open');
+        mobileMenu.classList.remove('open');
+        mobileMenu.setAttribute('aria-hidden', 'true');
+      }
+    });
+  
+    // Close mobile nav when a link is clicked
+    document.querySelectorAll('.nav-items a').forEach(link => {
+      link.addEventListener('click', () => {
+        navToggle.setAttribute('aria-expanded', 'false');
+        hamburgerIcon.classList.remove('open');
+        mobileMenu.classList.remove('open');
+        mobileMenu.setAttribute('aria-hidden', 'true');
+      });
+    });
+  </script>
 </body>
 </html>
